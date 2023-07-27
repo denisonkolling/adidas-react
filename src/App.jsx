@@ -1,16 +1,10 @@
-import { useState } from 'react';
-import Navbar from './components/Navbar';
-import ProductCard from './components/ProductCard';
-import Footer from './components/Footer';
-import TopSection from './components/TopSection';
+import Product from "./pages/product";
 
 function App() {
 	return (
 		<>
-			<Navbar />
-			<TopSection />
-			<ProductCard />
-			<Footer />
+			<Product />
+
 		</>
 	);
 }

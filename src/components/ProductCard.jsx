@@ -10,6 +10,7 @@ import img7 from '../assets/product_7.jpg';
 import img8 from '../assets/product_8.jpg';
 
 const ProductCard = () => {
+	
 	const [productList, setProductList] = useState([]);
 
 	useEffect(() => {
