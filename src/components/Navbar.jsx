@@ -7,12 +7,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg bg-light">
-				<a className="navbar-brand" href="#">
+				<a className="navbar-brand" to="/">
 					<img src={logo} alt="" width="60" height="37" className="ms-5" />
 				</a>
 				<div className="container-fluid justify-content-center">
@@ -31,53 +32,59 @@ const Navbar = () => {
 						className="collapse navbar-collapse flex-grow-0"
 						id="navbarNavDropdown">
 						<ul className="navbar-nav text-center font-family-sans-serif">
-							<li className="nav-item fw-bold fw-normal mx-2">
-								<a href="#" className="nav-link">
-									MULHER
-								</a>
+
+						<li className="nav-item fw-bold fw-normal mx-2">
+							<Link to="/" className="nav-link">
+									home
+								</Link>
 							</li>
 							<li className="nav-item fw-bold fw-normal mx-2">
-								<a href="#" className="nav-link">
+								<Link to="/woman" className="nav-link">
+									MULHER
+								</Link>
+							</li>
+							<li className="nav-item fw-bold fw-normal mx-2">
+								<Link to="/man" className="nav-link">
 									HOMEM
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item  fw-bold fw-normal mx-2">
-								<a href="#" className="nav-link">
+								<Link to="/kids" className="nav-link">
 									INFANTIL
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item fw-normal mx-2">
-								<a href="#" className="nav-link">
+								<Link to="/news" className="nav-link">
 									NOVIDADES
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item fw-normal mx-2">
-								<a href="#" className="nav-link">
+								<Link to="/" className="nav-link">
 									ESPORTES
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item fw-normal mx-2">
-								<a href="#" className="nav-link">
+								<Link to="/world" className="nav-link">
 									MUNDO ADIDAS
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item dropdown"></li>
 						</ul>
 					</div>
 				</div>
 				<div className='d-flex me-5'>
-					<a className="text-reset m-3" href="#">
+					<a className="text-reset m-3" to="/">
 						<span>
 							<FontAwesomeIcon icon={faHeart} />
 						</span>
 					</a>
 
-					<a className="text-reset m-3" href="#">
+					<a className="text-reset m-3" to="/">
 						<span>
 							<FontAwesomeIcon icon={faUser} />
 						</span>
 					</a>
-					<a className="text-reset m-3" href="#">
+					<a className="text-reset m-3" to="/">
 						<span>
 							<FontAwesomeIcon icon={faBagShopping} />
 						</span>

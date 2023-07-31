@@ -40,7 +40,7 @@ const ProductCard = () => {
 					{productList.map((p) => (
 						<div key={p.id}className="col-md-3 my-2 d-flex align-items-center justify-content-center">
 							<div className="card">
-								<img className="card-img-top" src={p.imageUrl} alt="..." />
+								<a href=""><img className="card-img-top" src={p.imageUrl} alt="..." /></a>
 								<div className="card-body">
 									<h6 className='text-capitalize'>{p.name.toLowerCase()}</h6>
 									<h6>R$ {p.price}</h6>
