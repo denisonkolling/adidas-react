@@ -1,8 +1,11 @@
 import React from 'react'
+import ProductGallery from '../../components/ProductGallery';
 
 const Woman = () => {
   return (
-    <div><h1>Woman</h1></div>
+    <>
+    <ProductGallery />
+    </>
   )
 }
 
