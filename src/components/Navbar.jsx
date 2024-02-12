@@ -33,11 +33,7 @@ const Navbar = () => {
 						id="navbarNavDropdown">
 						<ul className="navbar-nav text-center font-family-sans-serif">
 
-						<li className="nav-item fw-bold fw-normal mx-2">
-							<Link to="/" className="nav-link">
-									home
-								</Link>
-							</li>
+						
 							<li className="nav-item fw-bold fw-normal mx-2">
 								<Link to="/woman" className="nav-link">
 									MULHER
