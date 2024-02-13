@@ -13,9 +13,9 @@ const Navbar = () => {
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg bg-light">
-				<a className="navbar-brand" to="/">
+				<Link className="navbar-brand" to="/">
 					<img src={logo} alt="" width="60" height="37" className="ms-5" />
-				</a>
+				</Link>
 				<div className="container-fluid justify-content-center">
 					<button
 						className="navbar-toggler"
